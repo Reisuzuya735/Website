@@ -1,5 +1,5 @@
 @import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
-
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=VT323&display=swap');
 
 *{
   margin: 0px;
@@ -21,6 +21,11 @@ t{
   padding: 30px 0px;
 }
 
+h1, h5, p, a1{
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 
 article h1{
   padding-top:30px;

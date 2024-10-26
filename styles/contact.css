@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
-
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=VT323&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -12,6 +12,7 @@
 section{
   background-color:lightblue;
   transition: all .5s;
+  height: 100%;
 }
 
 .contact-section{
