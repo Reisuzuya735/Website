@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+@import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=VT323&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+header{
+  font-family: "VT323", monospace;
+  font-weight: 600;
+  font-style: normal;
+}
+
+ul a{
+  font-family: "VT323", monospace;
+  font-weight: 600;
+  font-style: normal;
+}
+div {
+  font-family: 'Roboto', sans-serif;
+}
+.sidebar {
+  position: fixed;
+  left: -200px;
+  width: 200px;
+  height: 100%;
+  background: #042331;
+  transition: all .5s ease;
+}
+.sidebar header {
+  font-size: 25px;
+  color: red;
+  line-height: 80px;
+  text-align: center;
+  background: #063146;
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 75px;
+  font-size: 25px;
+  color: white;
+  padding-left: 20px;
+  box-sizing: border-box;
+  border-bottom: 4px solid black;
+  border-top: 4px solid rgba(255,255,255,.1);
+  transition: .5s;
+}
+ul li:hover a{
+  padding-left: 30px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  left: 10px;
+  top: 10px;
+  font-size: 40px;
+  color: white;
+  padding: 5px 10px;
+  transition: all .5s ease;
+}
+label #cancel{
+  z-index: ;
+  left: -200px;
+  top: 10px;
+  font-size: 40px;
+  color: white;
+  padding: 5px 10px;
+  transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  left: 200px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 200px;
+}
+#check:checked ~ section{
+  margin-left: 200px;
+}
